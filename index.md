@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Because sharing knowledge
-tagline: really matters...
+title: 
+tagline:
 ---
 {% include JB/setup %}
 
