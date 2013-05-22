@@ -850,3 +850,9 @@ pre {
     margin-right: 360px;
   }
 }
+
+div.inline-images img {
+  display: inline;
+  margin: 0 10px;
+  margin-bottom: 15px;
+}
