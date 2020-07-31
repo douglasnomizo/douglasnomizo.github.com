@@ -8,10 +8,14 @@
     >
       <Avatar :avatar="profile.avatar" />
       <Social :social="profile.social" class="my-3" />
+      <hr class="my-4" />
       <Headline :profile="profile" />
-
+      <hr class="my-4" />
       <div class="my-3">
         <div class="uppercase font-bold my-2">Skills</div>
+        <ul>
+          <li v-for="({ name, experience }, idx) in skills" :key="idx">{{ name }}</li>
+        </ul>
       </div>
     </div>
     <div
@@ -43,6 +47,7 @@ export default Vue.extend({
   data: function () {
     return {
       profile: this.resume.profile,
+      skills: this.resume.skills,
     }
   },
 })
